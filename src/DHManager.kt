@@ -1,11 +1,12 @@
+import java.lang.Exception
 import java.time.LocalDateTime
 
 class DHManager
 {
-  val vAlunos = arrayListOf<Aluno>()
-  val vProfessores = arrayListOf<Professor>()
-  val vCursos = arrayListOf<Curso>()
-  val vMatriculas = arrayListOf<Matricula>()
+  private val vAlunos = arrayListOf<Aluno>()
+  private val vProfessores = arrayListOf<Professor>()
+  private val vCursos = arrayListOf<Curso>()
+  private val vMatriculas = arrayListOf<Matricula>()
 
 
   fun fnRegistrarCurso(nCodigo: Int, cNome:String, nQtdeAlunos: Int)
@@ -15,7 +16,16 @@ class DHManager
 
   fun fnExcluirCurso(nCodigo: Int)
   {
-    vCursos.forEach{if (it.nCodigo == nCodigo) vCursos.remove(it)}
+    //O CODIGO ABAIXO APRESENTOU ERRO NOS TESTES, POR ISSO FOI MODIFICADO
+    //vCursos.forEach{if (it.nCodigo == nCodigo) vCursos.remove(it)}
+
+    var oCurso: Curso? = null
+    vCursos.forEach{if (it.nCodigo == nCodigo) oCurso = it}
+
+    if (oCurso!=null)
+      vCursos.remove(oCurso!!)
+    else
+      throw (Exception("Este curso (código $nCodigo) não existe!"))
   }
 
   fun fnRegistrarProfTitular(nCodigo: Int, cNome: String, cSobrenome: String, cEspecialidade: String)
@@ -32,7 +42,16 @@ class DHManager
 
   fun fnExcluirProfessor(nCodigo: Int)
   {
-    vProfessores.forEach{if (it.nCodigo == nCodigo) vProfessores.remove(it)}
+    //O CODIGO ABAIXO APRESENTOU ERRO NOS TESTES, POR ISSO FOI MODIFICADO
+    //vProfessores.forEach{if (it.nCodigo == nCodigo) vProfessores.remove(it)}
+
+    var oProfessor: Professor? = null
+    vProfessores.forEach{if (it.nCodigo == nCodigo) oProfessor = it}
+
+    if (oProfessor!=null)
+      vProfessores.remove(oProfessor!!)
+    else
+      throw (Exception("Este professor (registro $nCodigo) não existe!"))
   }
 
   fun fnRegistrarAluno(nCodigo: Int, cNome: String, cSobrenome: String)
@@ -94,5 +113,6 @@ class DHManager
 
     oCurso!!.oTitular = oTitular as ProfessorTitular
     oCurso!!.oAdjunto = oAdjunto as ProfessorAdjunto
+    println("Professores vinculados no curso!")
   }
 }

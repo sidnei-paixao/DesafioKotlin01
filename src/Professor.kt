@@ -1,3 +1,4 @@
+import java.time.Duration
 import java.time.LocalDateTime
 
 open class Professor()
@@ -13,6 +14,11 @@ open class Professor()
     this.cNome = cNome
     this.cSobrenome = cSobrenome
     this.dDataContratacao = dDataContratacao
+  }
+
+  fun fnTempoCasa(): Int
+  {
+    return Duration.between(dDataContratacao, LocalDateTime.now()).toDays().toInt()
   }
 
 }
