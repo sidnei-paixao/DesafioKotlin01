@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a5ef37f-247a-4eba-b604-0c3f54439d33" name="Default Changelist" comment="" />
+    <list default="true" id="2a5ef37f-247a-4eba-b604-0c3f54439d33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Aluno.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aluno.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Curso.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Curso.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DHManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DHManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Matricula.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matricula.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Professor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Professor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProfessorAdjunto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProfessorAdjunto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProfessorTitular.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProfessorTitular.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1i84GYYH0grl00uMXKmbj0vsdJc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Kotlin" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -36,5 +66,11 @@
       <updated>1601275789296</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="301" y="72" key="SettingsEditor" timestamp="1601282100513">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="72" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1601282100513" />
   </component>
 </project>
